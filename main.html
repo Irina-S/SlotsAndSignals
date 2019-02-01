@@ -1,0 +1,54 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>fitme - Главная страница</title>
+        <link rel="stylesheet" href="styles.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="tabsInteraction.js"></script>
+        
+    </head>
+    <body>
+        <!--шапка сайта-->
+        <div id="hdr" class="header"></div> 
+        <!--таб бар-->
+        <div id="wr-tabs"> 
+                <!--вкладки-->
+                <div class="tabs"> 
+                    <div class="tab active">Продукты</div>
+                    <div class="tab">Вкладка №2</div>
+                    <div class="tab">Вкладка №3</div>
+                    <div class="tab">Вкладка №4</div>
+                </div>
+                <!--контент-->
+                <div class="content">
+                    <!--контент, соответсвующий вкладке-->
+                    <div class="tab-cont active">
+                        <div class="nav">
+                            <div class="nav_main">Главная</div>
+                            <div class="nav_sep">></div>
+                            <div class="nav_link">Продукты</div>
+                        </div>
+                    </div>
+                    <div class="tab-cont">
+                        Контент №2
+                    </div>
+                    <div class="tab-cont">
+                        Контент №3
+                    </div>
+                    <div class="tab-cont">
+                        Контент №4 
+                    </div>
+                </div>
+            </div>
+            <script>
+                   var winWidth = document.documentElement.clientWidth;
+                   var winHeight = document.documentElement.clientHeight;
+                   h = document.getElementById("hdr"); 
+                   t = document.getElementById("wr-tabs"); 
+                   h.style.width = winWidth+"px";
+                   h.style.height = winHeight*0.3+"px";
+                   t.style.width = winWidth+"px";
+            </script>
+    </body>
+</html>

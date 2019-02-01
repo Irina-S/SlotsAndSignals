@@ -1,0 +1,64 @@
+/*убрать отступ от границ окна*/
+body{
+	margin:0;
+}
+/*шапка с картинкой*/
+div.header{ 
+    background: url(headerbg.png) 100% 100% no-repeat;
+	background-size: cover;
+	position: relative;
+}
+
+div.nav {
+	
+	text-decoration: none;
+	text-decoration-color: #008000; 
+	white-space: nowrap;
+}
+div.nav_main .nav_sep .nav_link {
+	display:block;
+	float:left;
+}
+div > a{
+	text-decoration: none;
+	text-decoration-color: #008000; 
+	display:inline;
+}
+
+/*табы
+#wr-tabs{ 
+
+}*/
+	#wr-tabs .tabs{ /*сами вкладки*/
+		background-color:#008000;
+		margin-bottom: 3px;
+	}
+	#wr-tabs .tabs:after{ /*че это???контент после табов*/
+		content: "";
+		display: block;
+		clear: both;
+		height: 0;
+	}
+		#wr-tabs .tabs .tab{ /*одна вкладка*/
+			float: left;
+			cursor: pointer;
+			border-right: 1px solid #ffffff;
+			padding: 10px 20px;
+		}
+		
+		#wr-tabs .tabs .tab:hover, /*наведение курсора или активная вкладка*/
+		#wr-tabs .tabs .tab.active{
+			background-color: #ffffff;
+			color: #000000;
+		}
+	#wr-tabs .content{ /*контент*/
+		background-color: #fff;
+	}
+		#wr-tabs .content .tab-cont{/*загружаемый контент*/
+			display: none;
+			padding: 15px 10px;
+		}
+		#wr-tabs .content .tab-cont.active{/*контент активной вкладки*/
+			display: block;
+		}
+
