@@ -1,8 +1,9 @@
-/*убрать отступ от границ окна*/
+/*стиль всей страницы*/
 body{
 	margin:0;
 	font-family: "Helvetica";
 }
+
 /*шапка с картинкой*/
 div.header{ 
     background: url(headerbg.png) 100% 100% no-repeat;
@@ -10,30 +11,43 @@ div.header{
 	position: relative;
 }
 
-div.nav {
+/*иерархия навигации по сайту*/
+div.nav { /*вся строка с навигацией*/
+	font-size:10pt;
+	font-weight:600;
+	text-decoration: none;
+	color: #868686;
+	margin-left:calc(15%);
 	
-	text-decoration: none;
-	text-decoration-color: #008000; 
-	white-space: nowrap;
-}
-div.nav_main .nav_sep .nav_link {
-	display:block;
-	float:left;
-}
-div > a{
-	text-decoration: none;
-	text-decoration-color: #008000; 
-	display:inline;
 }
 
-/*табы
-#wr-tabs{ 
+div.nav_elem, div.nav_sep { /*общие стили для каждого элемента навигации*/
+	display:inline-block;
+	margin-right:5px;
+	vertical-align: middle;
+}
 
-}*/
+div.nav_sep{ /*стиль разделителя*/
+	font-family: "Calibri";
+	font-size: 13pt;
+}
+
+div.nav_elem > a, div.nav_elem > a:visited { /*ссылки внутри навигации одинаковые, в.т.ч. посещенные*/
+	text-decoration:none;
+	color:inherit;
+}
+
+div.nav_elem:last-child{ /*последний элемент не ссылка*/
+	color: #000000;
+}
+
 	#wr-tabs .tabs{ /*сами вкладки*/
 		background-color:#06ad06;
 		margin-bottom: 3px;
+		margin-left:0;
+		padding-left:calc(15%);
 	}
+
 	#wr-tabs .tabs:after{ /*че это???контент после табов*/
 		content: "";
 		display: block;
