@@ -42,13 +42,13 @@
                 </div>
             </div>
             <script>
-                   var winWidth = document.documentElement.clientWidth;
-                   var winHeight = document.documentElement.clientHeight;
+                    //выяснение размеров экрана и задание фиксированной ширины элементов на странице
+                   var winWidth = screen.width;//вся ширина окна браузера на весь экран
                    h = document.getElementById("hdr"); 
                    t = document.getElementById("wr-tabs"); 
-                   h.style.width = winWidth+"px";
-                   h.style.height = winHeight*0.3+"px";
-                   t.style.width = winWidth+"px";
+                   h.style.width = winWidth+"px";//шапка на весь экран
+                   h.style.height = winWidth*0.2+"px"; //высота:ширина=1:5
+                   t.style.width = winWidth+"px";//табы на весь экран
             </script>
     </body>
 </html>
