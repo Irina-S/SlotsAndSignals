@@ -1,6 +1,7 @@
 /*убрать отступ от границ окна*/
 body{
 	margin:0;
+	font-family: "Helvetica";
 }
 /*шапка с картинкой*/
 div.header{ 
@@ -30,7 +31,7 @@ div > a{
 
 }*/
 	#wr-tabs .tabs{ /*сами вкладки*/
-		background-color:#008000;
+		background-color:#06ad06;
 		margin-bottom: 3px;
 	}
 	#wr-tabs .tabs:after{ /*че это???контент после табов*/
@@ -43,7 +44,9 @@ div > a{
 			float: left;
 			cursor: pointer;
 			border-right: 1px solid #ffffff;
-			padding: 10px 20px;
+			padding: 5px 10px;
+			font-weight:550;
+			font-size:14pt;
 		}
 		
 		#wr-tabs .tabs .tab:hover, /*наведение курсора или активная вкладка*/
