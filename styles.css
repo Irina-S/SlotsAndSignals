@@ -63,13 +63,42 @@ body{
 
 		/*форма поиска*/
 		form.search{
-			width:calc(65%);
-			margin:0 auto;
+			width:550px;
+			height:40px;
+			margin-left: auto;
+			margin-right: auto;
+			margin-top:10px;
+			margin-bottom:20px;
+			background: url(search_bg.svg) no-repeat 50% 50%;
+			background-size:cover;
 		}
 
-			input[type="text"]{}
+			input[type="text"]{
+				border: none; /* Убираем рамку */
+				outline: none; /* Убираем свечение в Chrome и Safari */
+				-webkit-appearance: none; /* Убираем рамку в Chrome и Safari */
+				height: 40px;
+				width: 505px; /* Ширина поля */
+				vertical-align: middle; /* Выравнивание по середине */
+				font-size:15pt;
+				margin-top: 5px;
+				margin-bottom: 5px;
+				margin-left:8px;
+				color: #444444;
+				height: 30px;
+				float: left;
+				background-color: rgba(0, 0, 0, 0);
 
-			input[type="submit"]{}
+			}
 
-			input[type="reset"]{}
+			input[name="search"]{
+				width: 37px; /* Ширина кнопки */
+				height: 40px; /* Высота кнопки */
+				border: none; /* Убираем рамку */
+				background: url(search_btn.svg) no-repeat 50% 50%; /* Параметры фона */
+				padding:0;
+				float:left;
+				cursor:pointer;
+			}
+
 
