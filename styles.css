@@ -4,78 +4,72 @@ body{
 	font-family: "Helvetica";
 }
 
-/*шапка с картинкой*/
-div.header{ 
-    background: url(headerbg.png) 100% 100% no-repeat;
-	background-size: cover;
-	position: relative;
-}
-
-/*иерархия навигации по сайту*/
-div.nav { /*вся строка с навигацией*/
-	font-size:10pt;
-	font-weight:600;
-	text-decoration: none;
-	color: #868686;
-	margin-left:calc(15%);
-	
-}
-
-div.nav_elem, div.nav_sep { /*общие стили для каждого элемента навигации*/
-	display:inline-block;
-	margin-right:5px;
-	vertical-align: middle;
-}
-
-div.nav_sep{ /*стиль разделителя*/
-	font-family: "Calibri";
-	font-size: 13pt;
-}
-
-div.nav_elem > a, div.nav_elem > a:visited { /*ссылки внутри навигации одинаковые, в.т.ч. посещенные*/
-	text-decoration:none;
-	color:inherit;
-}
-
-div.nav_elem:last-child{ /*последний элемент не ссылка*/
-	color: #000000;
-}
-
-	#wr-tabs .tabs{ /*сами вкладки*/
-		background-color:#06ad06;
-		margin-bottom: 3px;
-		margin-left:0;
-		padding-left:calc(15%);
+	/*шапка с картинкой*/
+	div.header{ 
+    	background: url(headerbg.png) 100% 100% no-repeat;
+		background-size: cover;
+		position: relative;
 	}
 
-	#wr-tabs .tabs:after{ /*че это???контент после табов*/
-		content: "";
-		display: block;
-		clear: both;
-		height: 0;
+	/*иерархия навигации по сайту*/
+	/*вся строка с навигацией*/
+	div.nav { 
+		font-size:10pt;
+		font-weight:600;
+		text-decoration: none;
+		color: #868686;
+		margin-left:calc(20%);
 	}
-		#wr-tabs .tabs .tab{ /*одна вкладка*/
-			float: left;
-			cursor: pointer;
-			border-right: 1px solid #ffffff;
-			padding: 5px 10px;
-			font-weight:550;
-			font-size:14pt;
+
+		/*общие стили для каждого элемента навигации*/
+		div.nav_elem, div.nav_sep { 
+			display:inline-block;
+			margin-right:5px;
+			vertical-align: middle;
 		}
-		
-		#wr-tabs .tabs .tab:hover, /*наведение курсора или активная вкладка*/
-		#wr-tabs .tabs .tab.active{
-			background-color: #ffffff;
+
+		/*стиль разделителя*/
+		div.nav_sep{ 
+			font-family: "Calibri";
+			font-size: 13pt;
+		}
+
+		/*ссылки внутри навигации одинаковые, в.т.ч. посещенные*/
+		div.nav_elem > a, div.nav_elem > a:visited { 
+			text-decoration:none;
+			color:inherit;
+		}
+		/*последний элемент не ссылка*/
+		div.nav_elem:last-child{ 
 			color: #000000;
 		}
-	#wr-tabs .content{ /*контент*/
-		background-color: #fff;
+
+	/*блоки внутри табов*/
+	div.inner_content{
+		background-color: rgb(214, 211, 211);
+		border: 1px solid #7c7c7c;
+		margin: 10px calc(20%);
+		color:#444444;
 	}
-		#wr-tabs .content .tab-cont{/*загружаемый контент*/
-			display: none;
-			padding: 15px 10px;
+
+		/*заголовки внутренних блоков*/
+		div.block_header{
+			font-size:14pt;
+			font-weight:600;
+			text-align: center;
+			margin-top:5px;
+			margin-bottom:5px;
 		}
-		#wr-tabs .content .tab-cont.active{/*контент активной вкладки*/
-			display: block;
+
+		/*форма поиска*/
+		form.search{
+			width:calc(65%);
+			margin:0 auto;
 		}
+
+			input[type="text"]{}
+
+			input[type="submit"]{}
+
+			input[type="reset"]{}
 

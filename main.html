@@ -3,10 +3,14 @@
     <head>
         <meta charset="utf-8">
         <title>fitme - Главная страница</title>
+        <!--стили без jQuery-->
         <link rel="stylesheet" href="styles.css">
+        <!--стили с использованием jQuery-->
+        <link rel="stylesheet" href="jQueryStyles.css">
+        <!--используется jQuery-->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <script src="tabsInteraction.js"></script>
-        
+        <!--скрипт взаимодейсвия с табами-->
+        <script src="tabsInteraction.js"></script> 
     </head>
     <body>
         <!--шапка сайта-->
@@ -23,14 +27,30 @@
                 <div class="content">
                     <!--контент, соответсвующий вкладке-->
                     <div class="tab-cont active">
+                        <!--иерархия навигации-->
                         <div class="nav">
                             <div class="nav_elem nav_link"><a href="">Главная</a></div>
                             <div class="nav_sep">></div>
                             <div class="nav_elem nav_noLink">Продукты</div>
                         </div>
+                        <div class="inner_content">
+                            <div class="block_header">Поиск</div>
+                            <form class="search"> 
+                                <input type="text" width="calc(70%)" align="center">
+                                <input type="submit" src="" align="center">
+                                <input type="reset" src="" align="center">
+                            </form>
+                        </div>
                     </div>
                     <div class="tab-cont">
-                        Контент №2
+                            <div class="inner_content left_menu">
+                                    <ul class="menu_list">
+                                        <li>КБЖУ- Калории Белки Жиры Углеводы</li>
+                                        <li>ИМТ - индекс массы тела</li>
+                                        <li>Нормальный/идеальный вес</li>
+                                        <li>Суточная норма воды</li>
+                                    </ul>
+                                </div>
                     </div>
                     <div class="tab-cont">
                         Контент №3

@@ -1,0 +1,37 @@
+#wr-tabs .tabs{ /*сами вкладки*/
+		background-color:#06ad06;
+		margin-bottom: 3px;
+		margin-left:0;
+		padding-left:calc(20%);
+	}
+
+	#wr-tabs .tabs:after{ 
+		content: "";
+		display: block;
+		clear: both;
+		height: 0;
+	}
+		#wr-tabs .tabs .tab{ /*одна вкладка*/
+			float: left;
+			cursor: pointer;
+			border-right: 1px solid #ffffff;
+			padding: 5px 10px;
+			font-weight:550;
+			font-size:14pt;
+		}
+		
+		#wr-tabs .tabs .tab:hover, /*наведение курсора или активная вкладка*/
+		#wr-tabs .tabs .tab.active{
+			background-color: #ffffff;
+			color: #000000;
+		}
+	#wr-tabs .content{ /*контент*/
+		background-color: #fff;
+	}
+		#wr-tabs .content .tab-cont{/*загружаемый контент*/
+			display: none;
+			padding: 15px 10px;
+		}
+		#wr-tabs .content .tab-cont.active{/*контент активной вкладки*/
+			display: block;
+		}
