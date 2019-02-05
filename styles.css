@@ -69,15 +69,15 @@ body{
 			margin-right: auto;
 			margin-top:10px;
 			margin-bottom:20px;
-			background: url(search_bg.svg) no-repeat 50% 50%;
-			background-size:cover;
+			background: radial-gradient(farthest-corner, #ffffff, #ffffff, #f1f1f1, #dbdbdb);
+			border-radius: 8px;
+			border: solid 1px #949494;
 		}
 
 			input[type="text"]{
 				border: none; /* Убираем рамку */
 				outline: none; /* Убираем свечение в Chrome и Safari */
 				-webkit-appearance: none; /* Убираем рамку в Chrome и Safari */
-				height: 40px;
 				width: 505px; /* Ширина поля */
 				vertical-align: middle; /* Выравнивание по середине */
 				font-size:15pt;
