@@ -43,7 +43,7 @@
                         </div>
                         <div class="inner_content" >
                             <div class = "block_header">Категории продуктов</div>
-                            <div class = "column" id="prodCategories"></div>
+                            <div id="prodCategories"></div>
                         </div>
                     </div>
                     <div class="tab-cont">
@@ -63,15 +63,20 @@
                         Контент №4 
                     </div>
                 </div>
+                
+            </div>
+            <div class="footer" id="ftr">
             </div>
             <script>
                     //выяснение размеров экрана и задание фиксированной ширины элементов на странице
                    var winWidth = screen.width;//вся ширина окна браузера на весь экран
                    h = document.getElementById("hdr"); 
                    t = document.getElementById("wr-tabs"); 
+                   f = document.getElementById("ftr");
                    h.style.width = winWidth+"px";//шапка на весь экран
                    h.style.height = winWidth*0.2+"px"; //высота:ширина=1:5
                    t.style.width = winWidth+"px";//табы на весь экран
+                   f.style.width = winWidth+"px";
             </script>
             <script src="addCategories.js">
             </script>

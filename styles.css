@@ -130,5 +130,10 @@ body{
 				text-decoration: none;
 			}
 
-
+	div.footer{
+		height:150px;
+		background: url("footerbg.png") 50% 50% no-repeat;
+		background-color: #ffffff;
+		background-size: contain;
+	}
 
