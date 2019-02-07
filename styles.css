@@ -46,13 +46,17 @@ body{
 
 	/*блоки внутри табов*/
 	div.inner_content{
-		background-color: rgb(214, 211, 211);
-		border: 1px solid #7c7c7c;
-		margin: 10px calc(20%);
+		margin: 20px calc(20%);
 		color:#444444;
 		padding-left: 20px;
 		padding-right: 20px;
+		padding-bottom: 20px;
+		padding-top: 10px;
 		height:auto;
+		background-color: rgb(245, 245, 245);
+		-webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);
+		-moz-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);
+		box-shadow: 0 0 5px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);
 	}
 
 		/*заголовки внутренних блоков*/
@@ -107,7 +111,7 @@ body{
 		/* категории */
 		table.categories{
 			table-layout: fixed;
-			margin-top: 20px;
+			margin-top: 30px;
 			margin-bottom: 30px;
 			margin-left: auto;
 			margin-right:auto;
@@ -115,18 +119,16 @@ body{
 		}
 
 			td.category{
-				width:140px;
+				width:120px;
 				padding-right:20px;
-				height:80px;
+				height:60px;
 				vertical-align: top;
 			}
 
-			td.category:last-child{
-				padding-right:0;
-			}
+			
 
 			td.category>a, td.category>a:visited{
-				color: #0b009e;
+				color: #006d12;
 				text-decoration: none;
 			}
 
