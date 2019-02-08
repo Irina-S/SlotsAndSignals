@@ -37,7 +37,7 @@
                         <div class="inner_content">
                             <div class="block_header">Калькулятор</div>
                             <ul>
-                                <li><a href="">КБЖУ(Калории Белки Жиру УГлеводы)</a></li>
+                                <li><a href="">КБЖУ(Калории Белки Жиру Углеводы)</a></li>
                                 <li><a href="">ИМТ(Индекс Массы Тела)</a></li>
                                 <li><a href="">Нормальный вес</a></li>
                                 <li><a href="">Суточная норма воды</a></li>
@@ -45,6 +45,29 @@
                         </div>
                         <div class="inner_content" >
                             <div class = "block_header">КБЖУ</div>
+                            <form class="macros">
+                                <div class="label">Рост:</div>
+                                <div class="txtfield calcfield">
+                                    <input type="text">
+                                </div>
+                                <div class="label">Вес:</div>
+                                <div class="txtfield calcfield">
+                                    <input type="text">
+                                </div>
+                                <div class="label">Возраст:</div>
+                                <div class="txtfield calcfield">
+                                    <input type="text">
+                                </div>
+                                <div class="label">Цель:</div>
+                                    <input type="radio" name="purpose" value="weightLoss">Снижение веса
+                                    <input type="radio" name="purpose" value="weightGain">Набор веса
+                                    <input type="radio" name="purpose" value="weightSup">Поддержка веса
+                                <div class="label">Активность:</div>
+                                    <input type="radio" name="activity" value="low">Малоподвижный
+                                    <input type="radio" name="activity" value="normal">Средний
+                                    <input type="radio" name="activity" value="activ">Активный
+                                    <input type="radio" name="activity" value="hard">Интенсивные нагрузки
+                            </form>
                         </div>
                         <div class="inner_content" >
                             <div class = "block_header">Индекс массы тела</div>
