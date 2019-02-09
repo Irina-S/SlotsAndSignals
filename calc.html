@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>fitme - Главная страница</title>
+        <title>fitme - Калькулятор</title>
         <!--стили без jQuery-->
         <link rel="stylesheet" href="styles.css">
         <!--стили с использованием jQuery-->
@@ -33,19 +33,9 @@
                             <div class="nav_sep">></div>
                             <div class="nav_elem nav_noLink">Калькулятор</div>
                         </div>
-                        <!-- выбор калькулятора -->
-                        <div class="inner_content">
-                            <div class="block_header">Калькулятор</div>
-                            <ul>
-                                <li><a href="">КБЖУ(Калории Белки Жиру Углеводы)</a></li>
-                                <li><a href="">ИМТ(Индекс Массы Тела)</a></li>
-                                <li><a href="">Нормальный вес</a></li>
-                                <li><a href="">Суточная норма воды</a></li>
-                            </ul>
-                        </div>
                         <div class="inner_content" >
-                            <div class = "block_header">КБЖУ</div>
-                            <form class="macros">
+                            <div class = "block_header">Калькулятор</div>
+                            <form class="calc">
                                 <div class="label">Рост:</div>
                                 <div class="txtfield calcfield">
                                     <input type="text">
@@ -67,16 +57,12 @@
                                     <input type="radio" name="activity" value="normal">Средний
                                     <input type="radio" name="activity" value="activ">Активный
                                     <input type="radio" name="activity" value="hard">Интенсивные нагрузки
+                                <div class="btncont">
+                                    <input type="submit" value="Расчитать" class="button">
+                                    <input type="reset" value="Очистить" class="button">
+                                </div>
+                                
                             </form>
-                        </div>
-                        <div class="inner_content" >
-                            <div class = "block_header">Индекс массы тела</div>
-                        </div>
-                        <div class="inner_content" >
-                            <div class = "block_header">Нормальный вес</div>
-                        </div>
-                        <div class="inner_content" >
-                            <div class = "block_header">Суточная норма воды</div>
                         </div>
                     </div>
                 </div>

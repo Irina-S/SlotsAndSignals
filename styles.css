@@ -160,14 +160,61 @@ li{
 div.label{
 	margin-bottom:5px;
 	margin-top: 5px;
-	margin-left: 50px;
+	/* margin-left: 50px; */
 }
 
 div.calcfield{
 	width:300px;
-	margin-left: 50px;
+	/* margin-left: 50px; */
 }
 
 div.calcfield > input[type="text"]{
 	width: 290px;
 }
+
+input[type="radio"]{
+	margin:5px 10px;
+}
+
+form.calc{
+	margin:10px 50px;
+	position:relative;
+}
+
+.button{
+	width:200px;
+	/* padding-left:40px;
+	padding-right: 40px; */
+	height:50px;
+	background: #c0c0c0;
+	/* margin: 20px; */
+	font-family: inherit;
+	font-weight:600;
+	font-size:inherit;
+	color:inherit;
+	border:none;
+	cursor:pointer;
+	display:inline-block;
+	margin-top: 10px;
+}
+
+input[value="Расчитать"]{
+	position: absolute; 
+	left: 30%;
+	margin-left: -100px;
+}
+
+input[value="Очистить"]{
+	position: absolute; 
+	right: 30%;
+	margin-right: -100px;
+}
+.btncont{
+	height:50px;
+	width:100%;
+	position:relative;
+}
+
+/* .button:first-child{
+	margin-left:200px;
+} */
