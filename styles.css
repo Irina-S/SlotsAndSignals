@@ -96,7 +96,6 @@ body{
 			height: 30px;
 			float: left;
 			background-color: rgba(0, 0, 0, 0);
-
 		}
 
 		form[name="searchbox"]{
@@ -198,7 +197,7 @@ form.calc{
 	margin-top: 10px;
 }
 
-input[value="Расчитать"]{
+input[value="Расчитать"], input[value="Войти"]{
 	position: absolute; 
 	left: 30%;
 	margin-left: -100px;
@@ -209,12 +208,23 @@ input[value="Очистить"]{
 	right: 30%;
 	margin-right: -100px;
 }
+
 .btncont{
 	height:50px;
 	width:100%;
 	position:relative;
 }
 
-/* .button:first-child{
-	margin-left:200px;
-} */
+div.loginField{
+	width:500px;
+	margin-left:auto;
+	margin-right:auto;
+}
+#userName, #password{
+	width:490px;
+}
+
+input[value="Регистрация"]{
+	margin-bottom:-100px;
+
+}

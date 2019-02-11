@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>fitme - Калькулятор</title>
+        <title>fitme - Главная страница</title>
         <!--стили без jQuery-->
         <link rel="stylesheet" href="styles.css">
         <!--стили с использованием jQuery-->
@@ -19,9 +19,9 @@
         <div id="wr-tabs"> 
                 <!--вкладки-->
                 <div class="tabs"> 
-                    <div class="tab"><a href="main.html">Продукты</a></div>
-                    <div class="tab active"><a href="calc.html">Калькулятор</a></div>
-                    <div class="tab"><a href="login.html">Вход/Регистрация</a></div>
+                    <div class="tab "><a href="main.html">Продукты</a></div>
+                    <div class="tab"><a href="calc.html">Калькулятор</a></div>
+                    <div class="tab active"><a href="login.html">Вход/Регистрация</a></div>
                 </div>
                 <!--контент-->
                 <div class="content">
@@ -31,37 +31,23 @@
                         <div class="nav">
                             <div class="nav_elem nav_link"><a href="">Главная</a></div>
                             <div class="nav_sep">></div>
-                            <div class="nav_elem nav_noLink">Калькулятор</div>
+                            <div class="nav_elem nav_noLink">Вход/Регистрация </div>
                         </div>
-                        <div class="inner_content" >
-                            <div class = "block_header">Калькулятор</div>
-                            <form class="calc">
-                                <div class="label">Рост:</div>
-                                <div class="txtfield calcfield">
-                                    <input type="text">
+                        <!-- поиск продукта -->
+                        <div class="inner_content">
+                            <div class="block_header">Вход</div>
+                            <form class="loginForm"> 
+                                <div class="txtfield loginField">
+                                    <input type="text" placeholder="userName" id="userName">
                                 </div>
-                                <div class="label">Вес:</div>
-                                <div class="txtfield calcfield">
-                                    <input type="text">
+                                <div class="txtfield loginField">
+                                    <input type="text" placeholder="password" id="password">
                                 </div>
-                                <div class="label">Возраст:</div>
-                                <div class="txtfield calcfield">
-                                    <input type="text">
-                                </div>
-                                <div class="label">Цель:</div>
-                                    <input type="radio" name="purpose" value="weightLoss">Снижение веса
-                                    <input type="radio" name="purpose" value="weightGain">Набор веса
-                                    <input type="radio" name="purpose" value="weightSup">Поддержка веса
-                                <div class="label">Активность:</div>
-                                    <input type="radio" name="activity" value="low">Малоподвижный
-                                    <input type="radio" name="activity" value="normal">Средний
-                                    <input type="radio" name="activity" value="activ">Активный
-                                    <input type="radio" name="activity" value="hard">Интенсивные нагрузки
                                 <div class="btncont">
-                                    <input type="submit" value="Расчитать" class="button">
+                                    <input type="submit" value="Войти" class="button">
                                     <input type="reset" value="Очистить" class="button">
+                                    <input type="button" value="Регистрация" class="button">
                                 </div>
-                                
                             </form>
                         </div>
                     </div>
