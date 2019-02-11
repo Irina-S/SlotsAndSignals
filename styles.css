@@ -181,7 +181,7 @@ form.calc{
 }
 
 .button{
-	width:200px;
+	width:190px;
 	/* padding-left:40px;
 	padding-right: 40px; */
 	height:50px;
@@ -199,13 +199,13 @@ form.calc{
 
 input[value="Расчитать"], input[value="Войти"]{
 	position: absolute; 
-	left: 30%;
+	left: 35%;
 	margin-left: -100px;
 }
 
 input[value="Очистить"]{
 	position: absolute; 
-	right: 30%;
+	right: 35%;
 	margin-right: -100px;
 }
 
@@ -215,16 +215,29 @@ input[value="Очистить"]{
 	position:relative;
 }
 
+form.loginForm{
+	margin: 20px 50px;
+    position: relative;
+}
+
+form.loginForm > .btncont{
+	height:100px;
+	/* margin-bottom:20px; */
+}
+
 div.loginField{
-	width:500px;
+	width:400px;
 	margin-left:auto;
 	margin-right:auto;
 }
 #userName, #password{
-	width:490px;
+	width:390px;
 }
 
 input[value="Регистрация"]{
-	margin-bottom:-100px;
-
+	width:400px;
+	position:absolute;
+	margin-top:55px;
+	left:50%;
+	margin-left:-200px;
 }
