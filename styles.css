@@ -208,6 +208,8 @@ input[type="radio"]{
 	font-size:inherit;
 	color:inherit;
 	border:none;
+	outline: none; /* Убираем свечение в Chrome и Safari */
+	-webkit-appearance: none; /* Убираем рамку в Chrome и Safari */
 	cursor:pointer;
 	display:inline-block;
 	margin-top: 10px;
@@ -256,4 +258,18 @@ input[value="Регистрация"]{
 	margin-top:55px;
 	left:50%;
 	margin-left:-200px;
+}
+
+#profile{
+	height:290px;
+}
+
+div.profilePhotoCont{
+	height:200px;
+	width:200px;
+	margin:20px;
+	float:left;
+	background: url("noPhoto.jpeg") 50% 50% no-repeat;
+	background-size: contain;
+	/* position: relative; */
 }
