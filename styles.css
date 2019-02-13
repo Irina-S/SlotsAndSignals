@@ -62,6 +62,7 @@ body{
 		-webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);
 		-moz-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);
 		box-shadow: 0 0 5px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);
+		position:relative;
 	}
 
 		/*заголовки внутренних блоков*/
@@ -261,7 +262,8 @@ input[value="Регистрация"]{
 }
 
 #profile{
-	height:290px;
+	height:300px;
+	font-size:11pt;
 }
 
 div.profilePhotoCont{
@@ -273,3 +275,33 @@ div.profilePhotoCont{
 	background-size: contain;
 	/* position: relative; */
 }
+
+#edit{
+	float:left;
+	font-size:10pt;
+	font-weight:600;
+	color: #444444;
+	position:absolute;
+	top:280px;
+	left: 70px;
+}
+
+#userInfo{
+	width:550px;
+	height:100px;
+	border:none;
+	position:absolute;
+	left:240px;
+	top:58px;
+}
+
+#headlines{
+	background: #dbdbdb;
+}
+
+#values{
+	background: #f0efef;
+}
+
+
+
