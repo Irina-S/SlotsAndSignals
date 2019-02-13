@@ -278,7 +278,7 @@ div.profilePhotoCont{
 
 #edit{
 	float:left;
-	font-size:10pt;
+	font-size:11pt;
 	font-weight:600;
 	color: #444444;
 	position:absolute;
@@ -287,12 +287,14 @@ div.profilePhotoCont{
 }
 
 #userInfo{
-	width:550px;
-	height:100px;
+	width:auto;
+	height:70px;
 	border:none;
+	outline:none;
 	position:absolute;
 	left:240px;
 	top:58px;
+	font-size:10pt;
 }
 
 #headlines{
@@ -303,5 +305,53 @@ div.profilePhotoCont{
 	background: #f0efef;
 }
 
+#userInfo td{
+	width:75px;
+	padding-left:8px;
+}
 
+#progress{
+	width:520px;
+	height:150px;
+	position:absolute;
+	top:140px;
+	left:240px;
+	border: 1px solid black;
+}
 
+#progressBar{
+	width:480px;
+	height:30px;
+	border:none;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:60px;
+	background: #dbdbdb;
+}
+
+#progressBar > #done{
+	width:50%;
+	background: #006d12;
+	display:inline-block;
+	height:100%;
+}
+
+#startWeight{
+	font-size:16pt;
+	color:#444444;
+	font-weight:500;
+	display:inline-block;
+	position:absolute;
+	top:15px;
+	left:15px;
+}
+
+#targetWeight{
+	font-size:16pt;
+	color:#444444;
+	font-weight:500;
+	display:inline-block;
+	position:absolute;
+	top:15px;
+	right:15px;
+}
