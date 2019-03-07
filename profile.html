@@ -11,6 +11,9 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <!--скрипт взаимодейсвия с табами-->
         <!-- <script src="tabsInteraction.js"></script>  -->
+        <!-- скрипт и стили для каллендаря -->
+        <link href="datepicker.css" rel="stylesheet" type="text/css">
+        <script src="datepicker.min.js" type="text/javascript"></script>
     </head>
     <body>
         <!--шапка сайта-->
@@ -72,8 +75,18 @@
                         </div>
                         <div class="inner_content" id="dates">
                             <div class="block_header">xx.xx.xxxx, сегодня</div>
-                            <div id="datePick"></div>
-                            <div id="dateInfo"></div>
+                            <div id="datePick">
+                                <div class="datepicker-here"></div>
+                            </div>
+                            <!-- <div id="dateInfo"> -->
+                                <!-- <div id="energy"> -->
+                                    <div id="energyProgressBar">
+                                        <!-- <div id="startWeight">xx кг</div>
+                                        <div id="targetWeight">xx кг</div> -->
+                                        <div id="eaten"></div>
+                                    </div>
+                                <!-- </div> -->
+                            <!-- </div> -->
                         </div>
                         <div class="inner_content" id="food"> 
                             <div class="eatCategory" >

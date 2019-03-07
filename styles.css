@@ -452,3 +452,33 @@ div.profilePhotoCont{
 		width: 70px;
 		border-left:1px solid #dbdbdb;
 	}
+
+	#energy{
+		width:450px;
+		height:120px;
+		position:absolute;
+		top:140px;
+		right:40px;
+		border: 1px solid rgb(153, 153, 153);
+	}
+
+	#energyProgressBar{
+			width:400px;
+			height:30px;
+			border:none;
+			/* margin-left:auto;
+			margin-right:auto;
+			margin-top:60px; */
+			top:50px;
+			left:300px;
+			background: #dbdbdb;
+			position:absolute;
+	}
+
+	#energyProgressBar > #eaten{
+		width:50%;
+		background: #006d12;
+		display:inline-block;
+		height:100%;
+	}
+
