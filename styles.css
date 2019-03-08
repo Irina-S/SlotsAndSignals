@@ -359,25 +359,25 @@ div.profilePhotoCont{
 
 #dates{
 	position:relative;
-	height:250px;
+	height:320px;
 }
 
 	#datePick{
-		width:220px;
-		height:200px;
+		width:252px;
+		height:235px;
 		position:absolute;
-		left:20px;
+		/* left:20px; */
 		border:1px black solid;
-		top:50px;
+		margin:20px;
 	}
 
 	#dateInfo{
 		width:500px;
-		height:200px;
+		height:235px;
 		position:absolute;
-		right:20px;
+		right:0px;
 		border:1px black solid;
-		top:50px;
+		margin:20px;
 	}
 
 	#food{
