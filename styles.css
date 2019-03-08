@@ -366,8 +366,7 @@ div.profilePhotoCont{
 		width:252px;
 		height:235px;
 		position:absolute;
-		/* left:20px; */
-		border:1px black solid;
+		/* border:1px black solid; */
 		margin:20px;
 	}
 
@@ -376,7 +375,7 @@ div.profilePhotoCont{
 		height:235px;
 		position:absolute;
 		right:0px;
-		border:1px black solid;
+		/* border:1px black solid; */
 		margin:20px;
 	}
 
@@ -457,12 +456,9 @@ div.profilePhotoCont{
 		width:500px;
 		height:120px;
 		position:absolute;
-		/* top:140px;
-		right:40px; */
-		/* margin: auto 20px; */
 		right:0px;
 		bottom:0px;
-		border: 1px solid rgb(153, 153, 153);
+		/* border: 1px solid rgb(153, 153, 153); */
 	}
 
 	#energyProgressBar{
@@ -481,5 +477,38 @@ div.profilePhotoCont{
 		background: #006d12;
 		display:inline-block;
 		height:100%;
+	}
+
+	#percents{
+		font-size:16pt;
+		color:#444444;
+		font-weight:500;
+		display:inline-block;
+		position:absolute;		
+		right:45%;
+		top:15px;
+	}
+
+	#dailyValues{
+		width:100%;
+		height:auto;
+		border:none;
+		outline:none;
+		font-size:12pt;
+		font-weight:600;
+		color:#444444;
+	}
+	
+	
+	
+	#dailyValues  tr:first-child{
+		height:50px;
+		font-size:14pt;
+		text-align: center;
+	}
+	
+	#dailyValues  td{
+		height:50px;
+		padding-left:10px;
 	}
 
