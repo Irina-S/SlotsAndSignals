@@ -4,8 +4,8 @@
         <meta charset="utf-8">
         <title>fitme - Главная страница</title>
         <!--стили без jQuery-->
-        <link rel="stylesheet" href="styles.css">
         <link rel="stylesheet" href="global.css">
+        <link rel="stylesheet" href="main.css">
         <link rel="stylesheet" href="profile.css">
         <!--стили с использованием jQuery-->
         <link rel="stylesheet" href="jQueryStyles.css">
@@ -85,7 +85,7 @@
                         </div>
                         <div class="inner_content" id="food"> 
                             <div class="eatCategory" >
-                                <div class="subHeader">Завтрак<input type="button" value="+" class="addBtn"></div>
+                                <div class="subHeader">Завтрак<input type="button" value="" class="addBtn"></div>
                                 <div id="breakfast">
                                     <table class="eatenProducts">
                                         <col>
@@ -115,10 +115,52 @@
                                                 <td></td>
                                         </tr>
                                     </table>
+                                    <table class="prodSelect">
+                                        <tr>
+                                            <td>
+                                                <input type="submit" value="Сохранить" class="button">
+                                            </td>
+                                            <td>
+                                                <form name="searchbox"> 
+                                                    <div class="txtfield">
+                                                        <input type="text" placeholder="Введите название продукта..." id="searchfield">
+                                                        <input type="submit" value="" id="searchbtn">
+                                                    </div>
+                                                </form>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="catsCont">
+                                                <ul class="cats">
+                                                    <li>Категории</li>
+                                                </ul>
+                                            </td>
+                                            <td class="prodListCont">
+                                                <table class="prodList">
+                                                    <tr class="prodRow">
+                                                        <td><input type="checkbox"></td>
+                                                        <td>
+                                                            <div class="prodName">Название продукта</div>
+                                                            <div class="prodAmount">
+                                                                <input type="text" value="100">
+                                                                <span>г.</span>
+                                                                <span class="prodEnergy">xxx ккал</span>
+                                                            </div>
+                                                            
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="prodRow">
+                                                        <td><input type="checkbox"></td>
+                                                        <td></td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </table>
                                 </div>
                             </div>
                             <div class="eatCategory" >
-                                <div class="subHeader">Обед<input type="button" value="+" class="addBtn"></div>
+                                <div class="subHeader">Обед<input type="button" value="" class="addBtn"></div>
                                 <div id = "lunch"><table class="eatenProducts">
                                         <col>
                                         <col>
@@ -149,7 +191,7 @@
                                     </table></div>
                             </div>
                             <div class="eatCategory">
-                                <div class="subHeader">Ужин<input type="button" value="+" class="addBtn"></div>
+                                <div class="subHeader">Ужин<input type="button" value="" class="addBtn"></div>
                                 <div id="dinner"><table class="eatenProducts">
                                         <col>
                                         <col>
@@ -180,7 +222,7 @@
                                     </table></div>
                             </div>
                             <div class="eatCategory" >
-                                <div class="subHeader">Другое<input type="button" value="+" class="addBtn"></div>
+                                <div class="subHeader">Другое<input type="button" value="" class="addBtn"></div>
                                 <div id = "other"><table class="eatenProducts">
                                         <col>
                                         <col>
