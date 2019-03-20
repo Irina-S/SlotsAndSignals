@@ -1,0 +1,146 @@
+/*стиль всей страницы*/
+body{
+	margin:0;
+	font-family: "Helvetica";
+}
+
+/*шапка с картинкой*/
+div.header{ 
+    background: url(headerbg.png) 100% 100% no-repeat;
+	background-size: cover;
+	position: relative;
+}
+
+/*ссылки*/
+a, a:visited{
+	color:inherit;
+	text-decoration: none;
+}
+
+/*иерархия навигации по сайту*/
+
+/*вся строка с навигацией*/
+div.nav { 
+	font-size:10pt;
+	font-weight:600;
+    text-decoration: none;
+	color: #868686;
+	margin-left:calc(20%);
+}
+
+/*общие стили для каждого элемента навигации*/
+div.nav_elem, div.nav_sep { 
+	display:inline-block;
+	margin-right:5px;
+	vertical-align: middle;
+}
+
+/*стиль разделителя*/
+div.nav_sep{ 
+	font-family: "Calibri";
+	font-size: 13pt;
+}
+
+/*ссылки внутри навигации одинаковые, в.т.ч. посещенные*/
+/* div.nav_elem > a, div.nav_elem > a:visited { 
+			text-decoration:none;
+			color:inherit;
+} */
+
+/*последний элемент не ссылка*/
+div.nav_elem:last-child{ 
+	color: #000000;
+}
+
+/*блоки внутри табов*/
+div.inner_content{
+    margin: 20px calc(20%);
+    color:#444444;
+    padding-bottom: 20px;
+    height:auto;
+    background-color: rgb(255, 255, 255);
+    -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);
+    position:relative;
+}
+
+/*заголовки внутренних блоков*/
+div.block_header{
+    font-size:14pt;
+    font-weight:600;
+    text-align: center;
+    padding-top:10px;
+    padding-bottom:5px;
+    padding-left:20px;
+    padding-right:20px;
+    background: #dbdbdb;
+}
+
+/*текстовое поле*/
+
+/*контенер для тексового поля*/
+.txtfield{
+    height:40px;
+    margin-top:10px;
+    margin-bottom:20px;
+    background: radial-gradient(farthest-corner, #ffffff, #ffffff, #f1f1f1, #dbdbdb);
+    border-radius: 8px;
+    border: solid 1px #949494;
+}
+
+/*само поле*/
+input[type="text"]{
+    border: none; /* Убираем рамку */
+    outline: none; /* Убираем свечение в Chrome и Safari */
+    -webkit-appearance: none; /* Убираем рамку в Chrome и Safari */
+    vertical-align: middle; /* Выравнивание по середине */
+    font-size:15pt;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left:8px;
+    color: #444444;
+    height: 30px;
+    float: left;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+/*кнопка*/
+.button{
+	width:190px;
+	height:40px;
+	background: #c0c0c0;
+	font-family: inherit;
+	font-weight:600;
+	font-size:inherit;
+	color:inherit;
+	border:none;
+	outline: none; /* Убираем свечение в Chrome и Safari */
+	-webkit-appearance: none; /* Убираем рамку в Chrome и Safari */
+	cursor:pointer;
+	display:inline-block;
+}
+
+/*подстветка*/
+.button:hover{
+	background: #9e9e9e;
+}
+
+/*формы*/
+form{
+    height:auto;
+    padding: 20px 90px;
+    position: relative;
+    margin:10px 50px;
+    font-size:11pt;
+    font-weight:600;
+}
+
+/*подвал сайта*/
+div.footer{
+    height:150px;
+    background: url("footerbg.png") 50% 50% no-repeat;
+    background-color: #ffffff;
+    background-size: contain;
+}
+

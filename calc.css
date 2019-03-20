@@ -1,0 +1,30 @@
+div.label{
+	margin-bottom:5px;
+	margin-top: 5px;
+}
+
+/*задание особой ширины только для полей калькулятора*/
+div.calcfield{
+	width:300px;
+}
+
+div.calcfield > input[type="text"]{
+	width: 290px;
+}
+
+input[type="radio"]{
+	margin:5px 10px;
+}
+
+input[value="Расчитать"]{
+	/* position: absolute;  */
+	/* left: 30%; */
+	margin-left: calc(25% - 95px);
+}
+
+input[value="Очистить"]{
+	/* position: absolute;  */
+	/* right: 30%; */
+	margin-left: calc(25% - 95px);
+}
+
