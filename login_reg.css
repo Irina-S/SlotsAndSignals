@@ -1,0 +1,42 @@
+form.loginForm{
+	height:200px;
+}
+
+div.loginField{
+	width:400px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+#userName, #password{
+	width:390px;
+}
+
+
+input[value="Войти"]{
+	position:absolute;
+	left:160px;
+	margin:0px;
+}
+
+input[value="Регистрация"]{
+	position:absolute;
+	right:160px;
+	margin:0px;
+}
+
+#regForm{
+	height:400px;
+}
+
+input[value="Зарегестрироваться"]{
+	position:absolute;
+	left:160px;
+	margin:0px;
+}
+
+input[value="Очистить"]{
+	position:absolute;
+	right:160px;
+	margin:0px;
+}

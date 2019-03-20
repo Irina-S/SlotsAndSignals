@@ -1,0 +1,384 @@
+#profile{
+	height:320px;
+	font-size:11pt;
+}
+
+div.profilePhotoCont{
+	height:230px;
+	width:230px;
+	margin:20px;
+	float:left;
+	background: url("noPhoto.jpeg") 50% 50% no-repeat;
+	background-size: contain;
+}
+
+#edit{
+	float:left;
+	font-size:10pt;
+	font-weight:600;
+	color: #444444;
+	position:absolute;
+	margin-bottom:20px;
+	top:300px;
+	left: 90px;
+}
+
+#userInfo{
+	width:500px;
+	height:140px;
+	border:none;
+	outline:none;
+	position:absolute;
+	right:20px;
+	top:58px;
+	font-size:10pt;
+	box-sizing: border-box;
+	font-weight:600;
+	font-size:12pt;
+	color:#444444;
+	
+}
+
+ul.hr {
+	margin-left:0;
+	padding-left:0;
+	margin-block-end: 0;
+	margin-block-start: 0;
+	list-style-type: none;
+}
+   
+ul.hr li {
+	display: inline-block; /* Отображать как строчный элемент */
+	width:150px;
+	height:70px;
+	box-sizing: border-box;
+    padding: 3px;
+}
+
+#progress{
+	width:500px;
+	height:120px;
+	position:absolute;
+	top:200px;
+	right:20px;
+	/* border: 1px solid rgb(153, 153, 153); */
+}
+
+#progressBar{
+	width:480px;
+	height:30px;
+	border:none;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:60px;
+	background: #dbdbdb;
+}
+
+#progressBar > #done{
+	width:50%;
+	background: #006d12;
+	display:inline-block;
+	height:100%;
+}
+
+#startWeight{
+	font-size:16pt;
+	color:#444444;
+	font-weight:500;
+	display:inline-block;
+	position:absolute;
+	top:15px;
+	left:15px;
+}
+
+#targetWeight{
+	font-size:16pt;
+	color:#444444;
+	font-weight:500;
+	display:inline-block;
+	position:absolute;
+	top:15px;
+    right:15px;
+}
+
+#dates{
+	position:relative;
+	height:320px;
+}
+
+	#datePick{
+		width:252px;
+		height:235px;
+		position:absolute;
+		margin:20px;
+	}
+
+	#dateInfo{
+		width:500px;
+		height:235px;
+		position:absolute;
+		right:0px;
+	}
+
+	#food{
+		padding-top:30px;
+		height:auto;
+	}
+	div.eatCategory{
+		width:700px;
+		margin: 20px auto;
+		height:auto;
+	}
+
+	div.subHeader{
+		width:170px;
+		padding-left:10px;
+		padding-top: 10px;
+		height:30px;
+		position: relative;
+		bottom:-1px;
+		background: #dbdbdb;
+		color:#006d12;
+		font-weight:600;
+		font-size:14pt;
+	}
+
+	#breakfast, #lunch, #dinner, #other{
+		width:100%;
+		height:auto;
+		border: 10px #dbdbdb solid;
+		background: #ffffff;
+		box-sizing:border-box;
+	}
+
+	.addBtn{
+		width:24px;
+		height:24px;
+		background: url(img/plus.png) no-repeat;
+		background-size: contain;
+		display:inline-block;
+		border:none;
+		float: right;
+		margin-right:10px;
+	}
+
+	.addBtn:hover{
+		cursor: pointer;
+	}
+
+	#energy{
+		width:500px;
+		height:120px;
+		top:140px;
+		position:absolute;
+		right:20px;
+	}
+
+	#energyProgressBar{
+			width:480px;
+			height:30px;
+			border:none;
+			margin-left:auto;
+			margin-right:auto;
+			margin-top:60px;
+			background: #dbdbdb;
+	}
+
+	#energyProgressBar > #eaten{
+		width:50%;
+		background: #006d12;
+		display:inline-block;
+		height:100%;
+	}
+
+	#percents{
+		font-size:16pt;
+		color:#444444;
+		font-weight:500;
+		display:inline-block;
+		position:absolute;		
+		right:45%;
+		top:15px;
+	}
+
+	#dailyValues{
+		width:500px;
+		height:100px;
+		right:20px;
+		border:none;
+		outline:none;
+		font-size:12pt;
+		font-weight:600;
+		color:#444444;
+		position: absolute;
+	}
+	
+	
+	
+	#dailyValues  tr:first-child{
+		height:50px;
+		font-size:14pt;
+		text-align: center;
+	}
+	
+	#dailyValues  td{
+		height:50px;
+		padding-left:10px;
+	}
+
+form[name="searchbox"]{
+	padding:0;
+	margin:0;
+	width:100%;
+	height:100%;
+}
+
+
+
+form[name="searchbox"]>div{
+	width:100%;
+	margin: 10px 0;
+}
+
+#searchfield{
+	width:calc(100% - 45px);
+	float:left;
+}
+
+#searchbtn{
+	width: 37px; /* Ширина кнопки */
+	height: 40px; /* Высота кнопки */
+	border: none; /* Убираем рамку */
+	background: url(search_btn.svg) no-repeat 50% 50%; /* Параметры фона */
+	padding:0;
+	cursor:pointer;
+	outline: none; /* Убираем свечение в Chrome и Safari */
+	-webkit-appearance: none; /* Убираем рамку в Chrome и Safari */
+	float:right;
+}
+
+table.eatenProducts{
+	margin:auto auto;
+	width:100%;
+	height:100%;
+	font-size:12pt;
+	border-spacing: 0px;
+}
+
+table.eatenProducts tr{
+	height:30px;
+}
+
+table.eatenProducts tr:nth-child(odd){
+	background: #ffffff;
+}
+
+table.eatenProducts tr:nth-child(even){
+	background: #f3f3f3;
+}
+
+table.eatenProducts tr:first-child{
+	font-size:10pt;
+	font-weight:600;
+}
+
+table.eatenProducts col:first-child{
+	width:auto;
+}
+
+table.eatenProducts col{
+	width: 70px;
+}
+
+table.prodSelect{
+	background: #dbdbdb;
+	width:100%;
+	height:100%;
+	font-size:12pt;
+	border-spacing: 0px;
+}
+
+table.prodSelect tr:first-child{
+	height:30px;
+}
+
+table.prodSelect tr:last-child{
+	height:400px;
+}
+
+table.prodSelect td:first-child{
+	width:200px;
+}
+
+table.prodSelect td:last-child{
+	width:auto;
+}
+
+table.prodSelect td.catsCont{
+	vertical-align:top;
+	font-weight:600;
+}
+
+table.prodSelect td.prodListCont{
+	background:#FFFFFF;
+	border: 1px solid #006d12;
+	vertical-align: top;
+}
+
+table.prodList{
+	margin-top:0px;
+	width:100%;
+	height:auto;
+	border-spacing:0;
+	border-collapse:collapse;
+	background: #FFFFFF;
+	font-size:10pt;
+}
+
+table.prodList tr.prodRow{
+	width:100%;
+	height:50px;
+	border-bottom:1px solid #a09f9f;
+	font-size: 10pt;
+	/* font-weight:600; */
+}
+
+
+table.prodList td:first-child{
+	width:20px;
+}
+
+table.prodList td:last-child{
+	padding-left:5px;
+	width:auto;
+}
+
+div.prodName{
+	font-weight:600;
+}
+
+div.prodAmount > input[type="text"]{
+	font-size:10pt;
+	width:50px;
+	height:15px;
+	margin:0;
+	text-align:right;
+}
+
+span{
+	vertical-align: bottom;
+}
+
+span.prodEnergy{
+	width:50px;
+	height:15px;
+	font-size:10pt;
+	color:#006d12;
+}
+
+ul.cats{
+	margin:8px;
+	padding:0;
+	list-style: none;
+}
+

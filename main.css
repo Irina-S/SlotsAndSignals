@@ -1,0 +1,40 @@
+
+		
+
+		form[name="searchbox"]>div{
+			width:500px;
+		}
+
+		#searchfield{
+			width:450px;
+			float:left;
+		}
+
+		#searchbtn{
+			width: 37px; /* Ширина кнопки */
+			height: 40px; /* Высота кнопки */
+			border: none; /* Убираем рамку */
+			background: url(search_btn.svg) no-repeat 50% 50%; /* Параметры фона */
+			padding:0;
+			cursor:pointer;
+			outline: none; /* Убираем свечение в Chrome и Safari */
+			-webkit-appearance: none; /* Убираем рамку в Chrome и Safari */
+		}
+
+		/* категории */
+		table.categories{
+			table-layout: fixed;
+			margin-top: 30px;
+			margin-bottom: 30px;
+			margin-left: auto;
+			margin-right:auto;
+			font-weight: 600;
+		}
+
+			td.category{
+				width:120px;
+				padding-right:20px;
+				height:60px;
+				vertical-align: top;
+				color: #006d12;
+			}

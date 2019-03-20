@@ -1,0 +1,99 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>fitme - Калькулятор</title>
+        <!--стили без jQuery-->
+        <link rel="stylesheet" href="global.css">
+        <link rel="stylesheet" href="calc.css">
+        <link rel="stylesheet" href="profile.css">
+        <!--стили с использованием jQuery-->
+        <link rel="stylesheet" href="jQueryStyles.css">
+        <!--используется jQuery-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <!--скрипт взаимодейсвия с табами-->
+        <!-- <script src="tabsInteraction.js"></script>  -->
+    </head>
+    <body>
+        <!--шапка сайта-->
+        <div id="hdr" class="header"></div> 
+        <!--таб бар-->
+        <div id="wr-tabs"> 
+                <!--вкладки-->
+                <div class="tabs"> 
+                    <div class="tab"><a href="main.html">Продукты</a></div>
+                    <div class="tab active"><a href="calc.html">Калькулятор</a></div>
+                    <div class="tab"><a href="login.html">Вход/Регистрация</a></div>
+                </div>
+                <!--контент-->
+                <div class="content">
+                    <!--контент, соответсвующий вкладке-->
+                    <div class="tab-cont active">
+                        <!--иерархия навигации-->
+                        <div class="nav">
+                            <div class="nav_elem nav_link"><a href="">Главная</a></div>
+                            <div class="nav_sep">></div>
+                            <div class="nav_elem nav_link"><a href="">Дневник</a></div>
+                            <div class="nav_sep">></div>
+                            <div class="nav_elem nav_noLink">Редактирование профиля</div>
+                        </div>
+                        <div class="inner_content" >
+                            <div class = "block_header">Редактирование профиля</div>
+                            <form class="userData">
+                                <!-- <div class="profilePhotoCont"></div> -->
+                                <div class="label">Изменить фото:</div>
+                                <div class="txtfield calcfield">
+                                    <input type="file">
+                                </div>
+                                <div class="label">Рост:</div>
+                                <div class="txtfield calcfield">
+                                    <input type="text">
+                                </div>
+                                <div class="label">Вес:</div>
+                                <div class="txtfield calcfield">
+                                    <input type="text">
+                                </div>
+                                <div class="label">Возраст:</div>
+                                <div class="txtfield calcfield">
+                                    <input type="text">
+                                </div>
+                                <div class="label">Пол:</div>
+                                    <input type="radio" name="gender" value="male">Мужской
+                                    <input type="radio" name="gender" value="female">Женский
+                                <div class="label">Цель:</div>
+                                    <input type="radio" name="purpose" value="weightLoss">Снижение веса
+                                    <input type="radio" name="purpose" value="weightGain">Набор веса
+                                    <input type="radio" name="purpose" value="weightSup">Поддержка веса
+                                <div class="label">Активность:</div>
+                                    <input type="radio" name="activity" value="low">Малоподвижный
+                                    <input type="radio" name="activity" value="normal">Средний
+                                    <br>
+                                    <input type="radio" name="activity" value="activ">Активный
+                                    <input type="radio" name="activity" value="hard">Интенсивные нагрузки
+                                <!-- <div class="btncont"> -->
+                                    <input type="submit" value="Сохранить" class="button">
+                                    <input type="reset" value="Очистить" class="button">
+                                <!-- </div> -->
+                                
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="footer" id="ftr">
+            </div>
+            <script>
+                    //выяснение размеров экрана и задание фиксированной ширины элементов на странице
+                   var winWidth = screen.width;//вся ширина окна браузера на весь экран
+                   h = document.getElementById("hdr"); 
+                   t = document.getElementById("wr-tabs"); 
+                   f = document.getElementById("ftr");
+                   h.style.width = winWidth+"px";//шапка на весь экран
+                   h.style.height = winWidth*0.2+"px"; //высота:ширина=1:5
+                   t.style.width = winWidth+"px";//табы на весь экран
+                   f.style.width = winWidth+"px";
+            </script>
+            </script>
+    </body>
+</html>
